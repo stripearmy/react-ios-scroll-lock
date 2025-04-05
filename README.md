@@ -2,9 +2,9 @@
 
 The initial idea was to lock the body scroll on iOS Safari whenever we see fit, turns out we made something that works everywhere on the web<br />This was achieved with overscroll-behaviour css property
 
-### Medium Article: 
+### Medium Article: [https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0](https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0)
 
-### Demo: [https://stripearmy.github.io/ios-scroll-lock-demo/](https://stripearmy.github.io/ios-scroll-lock-demo/)
+### Demo: (desktop demo will be available soon) [https://stripearmy.github.io/ios-scroll-lock-demo/](https://stripearmy.github.io/ios-scroll-lock-demo/)
 
 ## Installation
 
