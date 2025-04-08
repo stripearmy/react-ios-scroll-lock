@@ -2,7 +2,7 @@
   "name": "react-ios-scroll-lock",
   "author": "Arsen Mkrtchyan (stripearmy)",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight CSS-only scroll lock solution for iOS Safari and Android",
   "type": "module",
   "main": "dist/react-ios-scroll-lock.umd.js",
