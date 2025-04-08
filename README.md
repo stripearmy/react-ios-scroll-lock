@@ -2,9 +2,26 @@
 
 The initial idea was to lock the body scroll on iOS Safari whenever we see fit, turns out we made something that works everywhere on the web<br />This was achieved with overscroll-behaviour css property
 
+Most workarounds involve JavaScript, touchmove event listeners, or weird side effects. I wanted something simpler — so I built react-ios-scroll-lock: a CSS-only scroll lock component that works across iOS, Android, and all major browsers.
+
+⚡️ Pure CSS – no JS scroll hacks (JS used only to measure device height and detect iOS)
+
+🧘 Doesn’t interfere with touch or scroll events
+
+📱 Works on iOS, Android, and desktop
+
+🪶 Minimal performance cost
+
+🧩 Easy to plug into any React project
+
 ### Medium Article: [https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0](https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0)
 
 ### Demo: (desktop demo will be available soon) [https://stripearmy.github.io/ios-scroll-lock-demo/](https://stripearmy.github.io/ios-scroll-lock-demo/)
+
+### Demo (simple yes/no modal): [https://stripearmy.github.io/ios-scroll-lock-demo/simple.html](https://stripearmy.github.io/ios-scroll-lock-demo/simple.html)
+
+### Demo (modal with scrollable content): [https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html](https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html)
+
 
 ## Installation
 
@@ -58,7 +75,7 @@ import 'react-ios-scroll-lock/css';
 <IosScrollLock bgColor="var(--yourCustomBgColor)">
 ```
 
-### Render the component contents ONLY wherever you want by using the optional "isInline" (boolean) attribute<br /><br />Note: Disables the effects of "isOpen" attribute 
+### Render the component contents ONLY wherever you want by using the optional "isInline" (boolean) attribute<br /><br />Note: Disables the effects of "isOpen" attribute<br/><br/>Can be useful if you don't want to render same component/content twice, once inside a page and once inside a modal, you can achieve both functionalities by utilizing "isInline"
 
 ```javascript
 <IosScrollLock isInline={true}>
