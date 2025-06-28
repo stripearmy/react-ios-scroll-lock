@@ -1,6 +1,5 @@
 // import "./styles/react-ios-scroll-lock.css";
 import React from "react";
-import cn from "classnames";
 
 interface IosScrollLockProps {
   bgColor?: string;
@@ -18,19 +17,13 @@ function IosScrollLock({
   bgColor = "",
 }: IosScrollLockProps) {
   import("./styles/styles.css");
-  const rootCn = cn({
-    isl_holder: true,
-    "isl_holder--contents": isInline,
-    "isl_holder--open": isOpen,
-    [className]: !!className,
-  });
 
   const rootStyle = bgColor
     ? ({ "--isl-bg": bgColor } as React.CSSProperties)
     : undefined;
 
   return (
-    <div className={rootCn} style={rootStyle}>
+    <div className={`isl_holder${!!isInline ? ' isl_holder--contents' : ''}${!!isOpen ? ' isl_holder--open' : ''}${!!className ? ` ${className}` : ''}`} style={rootStyle}>
       <div className="isl_scroller">
         <div className="isl_scroller_inner">
           <div className="isl_scroller_content">{children}</div>

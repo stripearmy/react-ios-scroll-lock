@@ -16,12 +16,11 @@ Most workarounds involve JavaScript, touchmove event listeners, or weird side ef
 
 ### Medium Article: [https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0](https://stripearmy.medium.com/i-fixed-a-decade-long-ios-safari-problem-0d85f76caec0)
 
-### Demo: (desktop demo will be available soon) [https://stripearmy.github.io/ios-scroll-lock-demo/](https://stripearmy.github.io/ios-scroll-lock-demo/)
+### Demo: [https://stripearmy.github.io/ios-scroll-lock-demo/](https://stripearmy.github.io/ios-scroll-lock-demo/)
 
 ### Demo (simple yes/no modal): [https://stripearmy.github.io/ios-scroll-lock-demo/simple.html](https://stripearmy.github.io/ios-scroll-lock-demo/simple.html)
 
 ### Demo (modal with scrollable content): [https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html](https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html)
-
 
 ## Installation
 

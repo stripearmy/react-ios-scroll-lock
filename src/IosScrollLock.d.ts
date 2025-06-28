@@ -1,5 +1,5 @@
 import "./styles/ios-scroll-lock.css";
-import React from "react";
+
 interface IosScrollLockProps {
     bgColor?: string;
     isInline?: boolean;
