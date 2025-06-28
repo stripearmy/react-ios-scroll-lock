@@ -1,4 +1,5 @@
 import "./styles/ios-scroll-lock.css";
+import type {ReactNode} from "react";
 
 interface IosScrollLockProps {
     bgColor?: string;

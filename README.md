@@ -22,6 +22,10 @@ Most workarounds involve JavaScript, touchmove event listeners, or weird side ef
 
 ### Demo (modal with scrollable content): [https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html](https://stripearmy.github.io/ios-scroll-lock-demo/scrollable.html)
 
+_LIGHT Package Size:_
+
+[![minzip size](https://badgen.net/bundlephobia/minzip/react-ios-scroll-lock?color=blue)](https://badgen.net/bundlephobia/minzip/react-ios-scroll-lock?color=blue)
+
 ## Installation
 
 	$ npm install react-ios-scroll-lock
