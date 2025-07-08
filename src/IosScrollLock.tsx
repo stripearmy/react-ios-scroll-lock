@@ -1,5 +1,5 @@
-// import "./styles/react-ios-scroll-lock.css";
-import React from "react";
+import React, {useEffect} from 'react';
+import("./styles/styles.css");
 
 interface IosScrollLockProps {
   bgColor?: string;
@@ -16,7 +16,28 @@ function IosScrollLock({
   className = "",
   bgColor = "",
 }: IosScrollLockProps) {
-  import("./styles/styles.css");
+
+  useEffect(() => {
+    const isIOS =
+        typeof window !== "undefined" &&
+        navigator.userAgent.match(/iPhone|iPad|iPod/i);
+
+    function setIOSHeight() {
+      document.documentElement.style.setProperty(
+          "--isl-vh",
+          window.innerHeight * 0.01 + "px"
+      );
+    }
+
+    if (isIOS) {
+      setIOSHeight();
+      window.addEventListener("resize", setIOSHeight);
+
+      return () => {
+        window.removeEventListener("resize", setIOSHeight);
+      };
+    }
+  }, []);
 
   const rootStyle = bgColor
     ? ({ "--isl-bg": bgColor } as React.CSSProperties)
