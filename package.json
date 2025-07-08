@@ -2,7 +2,7 @@
   "name": "react-ios-scroll-lock",
   "author": "Arsen Mkrtchyan (stripearmy)",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "A lightweight CSS-only scroll lock solution for iOS Safari and Android",
   "type": "module",
   "main": "dist/react-ios-scroll-lock.umd.js",
@@ -83,6 +83,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/node": "^22.13.10",
@@ -98,8 +102,8 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0",
     "vite-plugin-static-copy": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
     "vite-plugin-dts": "^4.5.3"
   }
 }
