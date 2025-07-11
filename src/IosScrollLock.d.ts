@@ -8,5 +8,7 @@ interface IosScrollLockProps {
     isOpen?: boolean;
     children: React.ReactNode;
 }
+
 declare function IosScrollLock({ children, isOpen, isInline, className, bgColor, }: IosScrollLockProps): import("react/jsx-runtime").JSX.Element;
+
 export default IosScrollLock;

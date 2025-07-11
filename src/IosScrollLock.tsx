@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import("./styles/styles.css");
+import './css/styles.css';
 
-interface IosScrollLockProps {
+export interface IosScrollLockProps {
   bgColor?: string;
   isInline?: boolean;
   className?: string;
